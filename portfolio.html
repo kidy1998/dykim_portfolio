@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test_portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="container">
+
+        <img src="../images/portfolio/배경.png" >
+        
+    </div>
+    <br><br><br>
+    <div class="info" id="textAnimation">백엔드 개발자 김도연입니다</div> <br><br><br>
+
+    <script>
+        const textElement = document.getElementById("textAnimation");
+        const text = textElement.textContent;
+        textElement.textContent = ""; // 초기 텍스트 제거
+
+        for (const letter of text) {
+            const span = document.createElement("span");
+            span.className = "letter";
+            span.textContent = letter;
+            textElement.appendChild(span);
+        }
+    </script>
+    
+    <div id="index">
+
+        <div class="index_div" id="aboutME">ABOUT ME</div>
+        <div class="index_div" id="SKILLS">SKILLS</div>
+        <div class="index_div" id="PROJECTS">PROJECTS</div>
+        
+    </div>
+
+    <br><br><br><br><br><br><br><br>
+
+    <div class="container">
+        <img src="../images/portfolio/aboutME.jpg" id="myInfo">
+        <img src="../images/portfolio/사진.jpg" id="myPhoto">
+        <div id="aboutMe">ABOUT ME</div>
+       
+    
+        <ul id="inputInfo" class="background-image">
+            <li class="inputInfo">김도연</li>
+            <li class="inputInfo">경기도 남양주시</li>
+            <li class="inputInfo">세종대학교 전자정보통신공학과 4학년 </li>
+            <li class="inputInfo">zzangkidy@naver.com</li>
+        </ul>
+       
+        <div id="introduce">학교에서 시스템 설계수업들을 들으며 코딩에 흥미가 생겼고,
+            C, JAVA를 배우며 백엔드 개발자를 꿈꾸게 되었습니다. <br>
+            팀원들에게는 힘이 되고, 고객에게는 도움이 되는 개발자가 되겠습니다.
+        </div>
+
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br>
+
+   
+    <div class="mySkills" id="mySkills">SKILLS
+        <div id="skillSet">
+            <img src="../images/portfolio/java.png" alt="">
+            <img src="../images/portfolio/c (1).png" alt="">
+            <img src="../images/portfolio/oracle.png" alt="">
+            <img src="../images/portfolio/javascript.png" alt="">
+            <img src="../images/portfolio/CSS.png" alt="">
+            <img src="../images/portfolio/eclipes.jpg" alt="">
+            <img src="../images/portfolio/vs.jpg" alt="">
+            <img src="../images/portfolio/db.png" alt="">
+            <img src="../images/portfolio/vsCode.jpg" alt="">
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div class="mySkills" id="myProject">PROJECT</div>
+
+
+    <div class="container">
+        
+        <div id="myStudy"><br>STUDYING <br><br><br><br>
+            <a href="https://velog.io/@zzangkidy" target="_blank"><img src="../images/portfolio/velog.png" > <br>Velog</a>   <br><br><br><br>
+            <a href="https://github.com/kidy1998" target="_blank"><img src="../images//portfolio/github.png"> <br>github</a>
+        </div>
+
+        
+        <div id="myWork"><br>WORK <br><br><br><br>
+
+            <a href="http://192.168.50.239:5500/02_CSS/youtube-clone.html" target="_blank"><img src="../images/portfolio/youtube-logo.png"><br>youtube-clone</a> <br><br><br><br>
+            <a href="https://velog.io/@zzangkidy/TODAY-I-LEARNED-0821" target="_blank"><img src="../images/portfolio/jdbc.png"><br>EmployeeManagement</a>
+
+        </div>
+
+    </div>
+    
+   
+    
+
+
+
+</body>
+<script src="/dykim_portfolio/portfolio.js"></script>
+</html>

@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+.container {
+    width: 99.1vw;
+    display: flex;
+    position: relative;
+    
+    
+}
+
+
+
+.container > img {
+    width: 100%; /* 이미지의 가로 길이 맞추기 */
+    height: auto; /* 세로 크기 */
+    max-height: 800px; /* 이미지의 최대 세로 크기를 700px로 제한 */
+}
+
+
+
+.info {
+
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 70px;
+    font-weight: 600;
+    position: relative;
+    
+}
+
+.letter {
+    
+    transform: translateY(0);
+    animation: jump 2s infinite;
+}
+
+@keyframes jump {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-50px); /* 위로 이동 */
+    }
+
+    70% {
+        transform: translateY(30px); /* 위로 이동 */
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+#index {
+
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+
+.index_div {
+
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(247, 172, 172);
+    cursor: pointer;
+    border-radius: 10px;
+   
+}
+
+.index_div:hover{
+    color: skyblue;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+
+
+#myInfo {
+  position: relative;
+}
+
+#myPhoto {
+
+    position: absolute;
+    width: 13%;
+    height: 26%;
+    top: 13%;
+    left: 7%;
+    z-index: 1;
+}
+
+#aboutMe {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 600;
+    position: absolute;
+    top: 22%;
+    left: 25%;
+}
+
+#info_Personal {
+    width: 40%;
+    height: 80%;
+    position: absolute;
+    top: 13%;
+    right: 5%;
+    bottom: 13%;
+}
+
+
+
+.background-image {
+
+    width: 40%;
+    height: 85%;
+    position: absolute;
+    top: 5%;
+    right: 3%;
+    bottom: 10%;
+
+    background-image: url('../images/portfolio/개인정보입력.jpg');
+    background-size: 100% 100%; /* 이미지를 커버하도록 설정 (크기 조절) */
+    background-repeat: no-repeat; /* 이미지 반복 없음 */
+    padding-left: 170px;
+
+    font-size: 30px;
+    line-height: 162px;
+    
+}
+
+.inputInfo {
+    list-style: none;
+}
+
+
+
+#introduce {
+    position: absolute;
+    width: 45%;
+    height: 40%;
+    left: 5%;
+    bottom: 10%;
+    color: rgb(68, 64, 64);
+    font-size: 33px;
+    font-weight: bold;
+    line-height: 160%;
+}
+
+.mySkills{
+    
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 600;
+    
+}
+
+#skillSet > img {
+   
+   margin: 10% 5% 5% 5%;
+   
+}
+
+
+#myProject {
+    margin-top: 15%;
+    margin-bottom: 10%;
+    
+}
+
+#myStudy {
+    flex-basis: 50%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    background-color: aliceblue;
+    border-right: 1px solid black;
+}
+
+
+#myWork {
+    flex-basis: 50%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    background-color: aliceblue;
+}
+
